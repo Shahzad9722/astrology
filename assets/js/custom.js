@@ -120,6 +120,47 @@
     astrology.init();
 
 }(jQuery));
+// Slider code
+const slides = document.querySelectorAll(".slide");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index >= slides.length) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length - 1;
+  } else {
+    currentIndex = index;
+  }
+  const offset = -currentIndex * 100;
+  document.querySelector(".slides").style.transform = `translateX(${offset}%)`;
+}
+
+next.addEventListener("click", () => {
+  showSlide(currentIndex + 1);
+});
+
+prev.addEventListener("click", () => {
+  showSlide(currentIndex - 1);
+});
+
+// Optional: Automatic sliding
+let slideInterval = setInterval(() => {
+  showSlide(currentIndex + 1);
+}, 3000);
+
+// Stop automatic sliding on hover
+document.querySelector(".slider").addEventListener("mouseover", () => {
+  clearInterval(slideInterval);
+});
+
+document.querySelector(".slider").addEventListener("mouseout", () => {
+  slideInterval = setInterval(() => {
+    showSlide(currentIndex + 1);
+  }, 3000);
+});
 
 
 

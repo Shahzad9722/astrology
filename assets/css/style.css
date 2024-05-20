@@ -54,7 +54,7 @@ a,a:hover,a:focus,a:visited{
     color: var(--white-color) !important;
 }
 .as_text_color{
-    color: #8b89a3;
+    color: #ECD9AE;
 }
 .as_top_30{
     padding-top: 30px !important;
@@ -705,7 +705,6 @@ button.as_btn {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 240px 0;
     position: relative;
     color: var(--white-color);
     overflow: hidden;
@@ -726,7 +725,7 @@ button.as_btn {
     text-align: center;
     font-weight: 300;
     line-height: 1.6;
-    color: #8b89a3;
+    color: #ECD9AE;
 }
 .as_banner_btn {
     display: flex;
@@ -739,7 +738,7 @@ button.as_btn {
 /* position banner */
 .as_banner_detail .as_btn {
     background: #113615;
-    color: #ffffff;
+    color: #ECD9AE;
     transition: all 0.3s linear;
 }
 .as_banner_detail .as_btn:hover{
@@ -1060,7 +1059,7 @@ background-image: linear-gradient(to right, #25642b , #1e5523, #1d5222, #1b4d20,
    border-color: #276b2e ;
 }
 .as_service_box:hover p {
-    color: #ffffff;
+    color: #ECD9AE;
 }
 .as_service_box:hover{
    
@@ -4453,9 +4452,69 @@ section.as_testimonial_wrapper {
     height: 1.5rem;
     width: auto;
   }
+  
+  
+  /* Slider images  */
+  
+  .slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
 
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
 
+.slide img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 
