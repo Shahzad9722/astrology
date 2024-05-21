@@ -364,7 +364,9 @@ button.as_btn {
 }
 .as_logo {
     display: flex;
-    padding: 10px 0 0;
+    padding: 5px 0 0;
+        width: 100px;
+        height: 100px;
 }
 .as_menu ul {
     padding: 0;
@@ -2651,13 +2653,17 @@ form.as_appointment_form {
     border-radius: 5px;
     border: 1px solid rgb(255 255 255 / 17%);
 }
+.appointment_section {
+    margin: auto;
+}
 section.as_contact_wrapper {
     padding: 70px 0px 80px;
 }
 .as_contact_detail {
+    margin-top: 100px;
     padding: 40px;
     border-radius: 5px;
-        border: 1px solid rgb(255 255 255 / 17%);
+    border: 1px solid rgb(255 255 255 / 17%);
 }
 .as_contact_detail ul {
     margin: 0;
@@ -4484,14 +4490,26 @@ section.as_testimonial_wrapper {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+background-color: rgba(0, 0, 0, 0.5);
+    color: #f4a636;
   padding: 10px 20px;
   border-radius: 4px;
   text-align: center;
   font-size: 1.5em;
+animation: slideIn 0.5s forwards;
 }
 
+ @keyframes slideIn {
+     from {
+         opacity: 0;
+         transform: translateX(-50%) translateY(20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(-50%) translateY(0);
+     }
+ }
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -4516,6 +4534,38 @@ section.as_testimonial_wrapper {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+#datetimepicker.form-control:disabled,
+#datetimepicker.form-control[readonly] {
+    background-color: transparent;
+}
+
+.datetime-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(255 255 255 / 17%);
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: calc(33.33% - 10px);
+    color: #8b89a399;
+}
+
+.datetime-select:focus {
+    background-color: transparent;
+    border-color: rgb(121 121 121 / 20%);
+    color: #ffffff;
+}
+
+.datetime-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mandatory::after {
+    content: '*';
+    color: red;
+    /* Change the color as needed */
+}
 
 
 
