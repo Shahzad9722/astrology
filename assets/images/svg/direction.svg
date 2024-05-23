@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32.865px" height="28.5px" viewBox="0 0 32.865 28.5" enable-background="new 0 0 32.865 28.5" xml:space="preserve">
+<g>
+	<polyline fill="none" points="16.227,13.322 22.842,13.322 26.788,9.538 22.851,5.874 16.227,5.874 	"/>
+	<polyline fill="none" points="14.227,5.874 5.208,5.874 5.208,13.322 14.227,13.322 	"/>
+	<polygon fill="#EBC16F" points="5.208,13.322 5.208,5.874 14.227,5.874 14.227,3.874 3.208,3.874 3.208,15.322 14.227,15.322 
+		14.227,13.322 	"/>
+	<polygon fill="#EBC16F" points="29.7,9.517 23.638,3.874 16.227,3.874 16.227,5.874 22.851,5.874 26.788,9.538 22.842,13.322 
+		16.227,13.322 16.227,15.322 23.646,15.322 	"/>
+	<rect x="14.227" y="15.322" fill="#EBC16F" width="2" height="11.268"/>
+	<rect x="14.227" y="1.618" fill="#EBC16F" width="2" height="2.256"/>
+	<line fill="#EBC16F" x1="16.227" y1="5.874" x2="14.227" y2="5.874"/>
+	<line fill="#EBC16F" x1="14.227" y1="13.322" x2="16.227" y2="13.322"/>
+	<rect x="14.227" y="13.322" fill="#EBC16F" width="2" height="2"/>
+	<rect x="14.227" y="3.874" fill="#EBC16F" width="2" height="2"/>
+</g>
+</svg>
