@@ -102,12 +102,11 @@ a:visited {
 }
 
 h3 {
-    font-weight: bold;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 36px;
     line-height: 1.27em;
-    letter-spacing: .22em;
+    letter-spacing: .15em;
 }
 
 .as_margin_top_20 {
@@ -135,10 +134,10 @@ h3 {
     position: relative;
     color: var(--white-color);
     font-weight: 600;
-    font-weight: bold;
-    font-size: 48px;
+    font-size: 33px;
     line-height: 1.27em;
-    letter-spacing: .22em;
+    letter-spacing: .2em;
+    margin-left: 4px !important;
 }
 
 section.as_horoscope_new_wrapper {
@@ -449,6 +448,20 @@ button.as_btn {
 /* header css start */
 .as_header_wrapper {
     background-color: #113615;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.heading_sections{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 20px;
 }
 
 .as_logo {
@@ -1703,11 +1716,11 @@ span.as_title_line {
     align-items: center;
 }
 
-/* .centered-image {
-     width: 100px;
-     height: 30px;
+ .centered-image {
+   width: 50px;
+   height: 30px
 }
- */
+
 .as_blog_img:hover .overlay {
     opacity: 1;
     /* Fully visible on hover */
@@ -2356,7 +2369,7 @@ p.as_pricing_subheading {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 120px 0px;
+    padding: 160px 0px 60px;
     position: relative;
     z-index: 1;
     color: var(--white-color);
@@ -4070,6 +4083,22 @@ section.as_testimonial_wrapper {
     margin-bottom: 30px;
 }
 
+   .vishnu_desktop {
+       display: flex;
+   }
+
+   .vishnu_mobile {
+       display: none;
+   }
+.videos_section .video {
+               display: flex;
+               flex-direction: column;
+               gap: 25px;
+ }
+ .view-more-btn{
+    background: #2E5832 !important;
+ }
+
 /* Responsive css */
 @media (min-width: 1200px) {
     .container {
@@ -4582,6 +4611,34 @@ section.as_testimonial_wrapper {
     h3{
         font-size: 35px;
     }
+    .vishnu_desktop{
+        display: none;
+    }
+    .vishnu_mobile {
+             display: flex;
+   }
+    .vishnu_mobile img {
+            border-radius: 12px;
+    }
+    .as_blog_img{
+        padding: 10px;
+    }
+    .as_blog_img>img{
+        height: auto !important;
+    }
+    .videos_section{
+        display: flex;
+        gap: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .videos_section .video {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 70vw;
+        height: auto;
+    }
 }
 
 @media (max-width:768px) {
@@ -4709,11 +4766,10 @@ section.as_testimonial_wrapper {
     }
 
     .as_menu ul li a:before {
-        display: none;
+        display: block;
     }
 
     .as_menu_wrapper {
-        padding: 12px 10px;
         background: transparent;
         border-radius: 5px;
         color: #EBC26A
@@ -4885,6 +4941,10 @@ section.as_testimonial_wrapper {
             display: block;
             text-align: center;
      }
+    .as_logo {
+        width: 75px;
+        height: 75px;
+    }
 
 }
 
@@ -5080,10 +5140,6 @@ section.as_testimonial_wrapper {
         padding: 30px 0px 40px;
     }
 
-    .as_breadcrum_wrapper {
-        padding: 50px 0px;
-    }
-
     .as_blog_wrapper {
         padding: 40px 0px 40px;
     }
@@ -5127,6 +5183,12 @@ section.as_testimonial_wrapper {
 
     section.as_testimonial_wrapper {
         padding: 30px 0px 40px;
+    }
+    .as_subheading a{
+            font-size: 18px;
+        }
+    .as_heading{
+        font-size: 20px;
     }
 }
 
@@ -5296,9 +5358,10 @@ section.as_testimonial_wrapper {
 
 .slide img {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: 100vh;
     /* Adjust height as needed */
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .slide>.caption-container {
@@ -5360,8 +5423,8 @@ section.as_testimonial_wrapper {
         width: 80%;
     }
      h3 {
-        font-size: 31px;
-        line-height: 41px;
+        font-size: 23px;
+        line-height: 38px;
     }
 .as_service_single.as_service_single_new{
     padding: 5px;
