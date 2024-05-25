@@ -5325,10 +5325,7 @@ section.as_testimonial_wrapper {
     font-size: 3em;
     background-color: rgba(17, 54, 21, 0.55);
     animation: appearFromCenter 0.5s ease-in-out forwards;
-    /* animation: slideIn 0.5s forwards;
-             */
     z-index: 1;
-    /* Ensure that the caption is positioned above the image */
 }
 
 @media only screen and (max-width: 600px) {
@@ -5486,4 +5483,10 @@ section.as_testimonial_wrapper {
     font-size: 20px;
     width: 45px;
     transition: background-color 0.3s;
+}
+.prev{
+    color: #EBC26A;
+}
+.next {
+    color: #EBC26A;
 }
