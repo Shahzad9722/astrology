@@ -4654,6 +4654,32 @@ section.as_testimonial_wrapper {
         top: 13px;
         padding: 0;
     }
+    .as_menu>ul>li>a{
+        font-weight: 600;
+        font-family: "lota";
+        line-height: 23px;
+        color: #c9ab81;
+    }
+    .as_menu>ul>li>a.active {
+            color: #c9ab81;
+        }
+    .as_menu>ul>li>a.active::after {
+            width: 120px;
+            bottom: 4px
+          }
+    .as_menu>ul>li>a.active::before{
+        width: 120px;
+        bottom: 7px;
+    }
+        
+    .as_menu>ul>li>a:after{
+        left: 15%;
+        bottom:4px;
+    }
+    .as_menu>ul>li>a:before{
+            left: 15%;
+            bottom: 7px;
+        }
 
     .prod_quantity {
         margin: 0 0 20px 0;
@@ -4736,7 +4762,7 @@ section.as_testimonial_wrapper {
         padding: 13px 20px;
     }
 
-    .as_menu {
+    /* .as_menu {
         position: fixed;
         left: -250px;
         top: 0;
@@ -4757,7 +4783,38 @@ section.as_testimonial_wrapper {
         left: 0;
         opacity: 1;
         visibility: visible;
-    }
+    } */
+    
+         .as_menu {
+             position: fixed;
+             top: 10%;
+             /* Initially hide the menu above the viewport */
+             left: 0;
+             width: 100%;
+             background-color: #113615;
+             z-index: 999;
+             height: 40vh;
+             overflow-y: auto;
+             transition: top 0.5s;
+             /* Transition from top */
+         }
+    
+         .as_menu.open {
+             top: 10%;
+             /* Move the menu to the top of the viewport when open */
+         }
+    
+    
+         body.menuOpen .as_menu {
+             top: -100%;
+         }
+    
+         .menu_open .as_menu {
+             top: -100%;
+             opacity: 1;
+             visibility: visible;
+         }
+    
 
     .as_menu li {
         display: flex;
