@@ -4378,7 +4378,7 @@ section.as_testimonial_wrapper {
         justify-content: start;
     }
 
-
+ 
 
     .slide>.caption-container>.caption{
         font-size: 2.2em !important;
@@ -4641,9 +4641,15 @@ section.as_testimonial_wrapper {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        width: 70vw;
+        width: 100%;
         height: auto;
     }
+}
+
+
+#menu{
+    display: block;
+
 }
 
 @media (max-width:768px) {
@@ -4651,6 +4657,8 @@ section.as_testimonial_wrapper {
         position: relative;
         border-bottom: none;
     }
+
+
 
     .as_menu>ul>li span.as_submenu_arrow {
         position: absolute;
@@ -4792,7 +4800,7 @@ section.as_testimonial_wrapper {
     
          .as_menu {
              position: fixed;
-             top: 10%;
+             top: 11%;
              /* Initially hide the menu above the viewport */
              left: 0;
              width: 100%;
@@ -4800,7 +4808,7 @@ section.as_testimonial_wrapper {
              z-index: 999;
              height: 40vh;
              overflow-y: auto;
-             transition: top 0.5s;
+             transition: top 0.5s ease-in;
              /* Transition from top */
          }
     
@@ -4890,6 +4898,19 @@ section.as_testimonial_wrapper {
 
     .as_menu>ul>li .as_submenu:before {
         display: none;
+    }
+    #menu{
+        display: none;
+        position: fixed;
+        top: 11%;
+        /* Initially hide the menu above the viewport */
+        left: 0;
+        width: 100%;
+        background-color: #113615;
+        z-index: 999;
+        height: 40vh;
+        overflow-y: auto;
+        transition: top 0.5s ease-in;
     }
 
     .as_menu ul li .as_submenu.active {

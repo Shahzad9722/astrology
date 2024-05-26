@@ -1,3 +1,66 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const menuToggle = document.getElementById("toggleIcon");
+  const menu = document.getElementById("menu");
+  const body = document.body;
+  const menuItems = menu.querySelectorAll("li");
+
+  let isMenuOpen = false;
+
+  menuToggle.addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevents the click event from bubbling up to the document body
+    toggleMenu();
+  });
+
+  function toggleMenu() {
+    if (!isMenuOpen) {
+      menu.style.display = "block";
+      menu.style.transition = "all 0.5s ease-in";
+      body.classList.add("menu");
+      isMenuOpen = true;
+    } else {
+      menu.style.display = "none";
+      body.classList.remove("menu");
+      isMenuOpen = false;
+    }
+  }
+
+  // Close the menu when clicking outside of it
+  document.addEventListener("click", function(event) {
+    if (isMenuOpen && !menu.contains(event.target) && event.target !== menuToggle) {
+      toggleMenu();
+    }
+  });
+
+  // Close the menu when clicking on a menu item
+  menuItems.forEach(function(item) {
+    item.addEventListener("click", function(event) {
+      const link = item.querySelector("a");
+      if (link) {
+        const href = link.getAttribute("href");
+        // Check if the link is targeting an anchor within the same page
+        if (href.startsWith("#")) {
+          event.preventDefault(); // Prevent default behavior for anchor links
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          // Scroll to the target section
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // For links targeting other pages, let the default behavior handle the navigation
+          // The menu will be closed after the navigation completes
+          return;
+        }
+      }
+      // Hide the menu after performing the action
+      toggleMenu();
+    });
+  });
+});
+
+
+
+
 (function($) {
   "use strict";
   var astrology = {
@@ -28,11 +91,7 @@
       },
 
       // 
-      toggle: function() {
-        $(".as_toggle").click(function(){
-          $('body').toggleClass("menuOpen");
-        });
-      },
+   
       // 
       toggleSubmenu: function() {
         $('.as_menu ul li a').click(function(e) {
@@ -165,8 +224,21 @@ document.querySelector(".slider").addEventListener("mouseout", () => {
 });
 
 
+$('body').addClass("menuOpen");
+var menuOpen = {
+  init: function() {
+     
+      
 
+      // Attach click event to toggle button
+      $(".as_toggle").click(function(){
+          $('body').toggleClass("menuOpen");
+      });
+  }
+};
 
+// Call the init method to initialize the functionality
+menuOpen.init();
 
 
 

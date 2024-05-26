@@ -79,7 +79,7 @@
                      <div class="as_right_info">
                         <div class="as_menu_wrapper">
                            <span class="as_toggle">
-                              <img src="assets/images/svg/menu.svg" alt="">
+                              <img id="toggleIcon" src="assets/images/svg/menu.svg" alt="">
                            </span>
                            <div id="menu" class="as_menu">
                               <ul>
@@ -290,7 +290,7 @@
          <section class="as_product_wrapper as_section_dark" id="videos">
             <div class="container p-4">
                <div class="row">
-                  <div class="col-lg-12 col-md-12 text-center">
+                  <div class="col-lg-12 col-md-12 text-center d-flex justify-content-center align-items-center flex-column">
                      <div class="heading_sections">
                      <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
                      <h3 class="as_heading">WATCH OUR VIDEOS</h3>
@@ -301,7 +301,7 @@
                         can enhance your life.</p>
                         <br>
                      <div class="row videos_section">
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
                               <iframe width="100%" height="250px" src="https://www.youtube.com/embed/gqbf2aWLQ94" title="Santhanam Manakuthu Murugan Songs - Super Singer Muthusirpi Live Performance | Bakthi Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
@@ -310,7 +310,7 @@
                           </div>
                       
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
                               <iframe width="100%" height="250px" src="https://www.youtube.com/embed/7lmkfWpedzA" title="Engalukkum Kuraiyum Undu Song - Super Singer Aruna Akila Performance | Bakthi Song | IBC Bakthi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
@@ -319,7 +319,7 @@
                           </div>
                       
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
                               <iframe width="100%" height="250px" src="https://www.youtube.com/embed/BVoNBrUeRq4" title="ஆன்மீகத்திலும் பிரச்சினைகள் வரும்  | Osho Life History In Tamil | Osho Techniques | IBC Bakthi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
@@ -537,6 +537,8 @@
 
 
       <script>
+
+
          const apiKey = 'AIzaSyCUdLOcICzvkkv2loFVxQx4eWTUmD_Jhj4';
          const channelId = 'YOUR_CHANNEL_ID';
  
@@ -568,6 +570,7 @@
          // Call fetchVideos function when page loads
          window.onload = fetchVideos;
      </script>
+
 
 
 
