@@ -4690,11 +4690,7 @@ section.as_testimonial_wrapper {
         display: flex;
         flex-direction: column;
         gap: 30px;
-<<<<<<< HEAD
-=======
         width: 100%;
->>>>>>> Aqeel
-        height: auto;
     }
 }
 
