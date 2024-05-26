@@ -2756,7 +2756,9 @@ section.as_service_wrapper.as_section_dark p.as_text_color {
 .as_tab_wrapper .nav-link {
     color: #ffffff;
 }
-
+.light-stroke{
+    stroke: #EBC26A;
+}
 .as_countdown_wrapper ul li {
     display: inline-flex;
     flex-direction: column;
@@ -2852,6 +2854,10 @@ section.as_service_wrapper.as_section_dark p.as_text_color {
 .row.as_blog_sngle_area img {
     border-radius: 5px;
     margin: 10px 0 30px;
+}
+
+.heading_sections h3 {
+    margin-left: 3px;
 }
 
 .as_tag_wrapper .as_btn:hover {
