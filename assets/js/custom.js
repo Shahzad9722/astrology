@@ -180,11 +180,11 @@ function showSlide(index) {
 }
 
 
-next.addEventListener("click", () => {
+next?.addEventListener("click", () => {
   showSlide(currentIndex + 1);
 });
 
-prev.addEventListener("click", () => {
+prev?.addEventListener("click", () => {
   showSlide(currentIndex - 1);
 });
 

@@ -136,7 +136,7 @@ h3 {
     font-size: 33px;
     line-height: 1.27em;
     letter-spacing: .2em;
-    margin-left: 4px !important;
+    margin-left: 2px !important;
 }
 
 section.as_horoscope_new_wrapper {
@@ -551,7 +551,7 @@ button.as_btn {
 .as_menu>ul>li>a.active:after,
 .as_menu>ul>li>a:hover:before,
 .as_menu>ul>li>a.active:before {
-    width: 90px;
+    width: 170px;
 }
 
 .as_menu ul li a:hover,
@@ -4468,7 +4468,7 @@ section.as_testimonial_wrapper {
     }
 
     .as_menu>ul>li>a:hover:after, .as_menu>ul>li>a.active:after, .as_menu>ul>li>a:hover:before{
-        width: 120px;
+        width: 170px;
     }
     /* .as_menu>ul>li>a.active:before {
         display: none;
@@ -4761,6 +4761,10 @@ section.as_testimonial_wrapper {
         position: relative;
         border-bottom: none;
     }
+    
+    .as_about_wrapper .about-us-secotion img {
+        padding-bottom: 20px;
+    }
 
 
 
@@ -4782,11 +4786,11 @@ section.as_testimonial_wrapper {
             color: #c9ab81;
         }
     .as_menu>ul>li>a.active::after {
-            width: 120px;
+            width: 170px;
             bottom: 4px
           }
     .as_menu>ul>li>a.active::before{
-        width: 120px;
+        width: 170px;
         bottom: 7px;
     }
         
@@ -5383,10 +5387,10 @@ section.as_testimonial_wrapper {
         padding: 30px 0px 40px;
     }
     .as_subheading a{
-            font-size: 18px;
+            font-size: 16px;
         }
     .as_heading{
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -5641,8 +5645,9 @@ section.as_testimonial_wrapper {
         width: 80%;
     }
      h3 {
-        font-size: 23px;
-        line-height: 38px;
+        font-size: 21px;
+        line-height: 33px;
+        margin-left: 2px;
     }
 .as_service_single.as_service_single_new{
     padding: 5px;
