@@ -19,7 +19,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    background-color: var(--white-color);
+    background-color: var(--dark-color2);
     /* color: var(--white-color);
      */
     color: #EBC26A;
@@ -30,6 +30,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    /* pointer-events: none; */
 }
 
 .hide {
@@ -1090,7 +1091,7 @@ button.as_btn {
 }
 
 .as-about-heading p {
-    font-size: 16px;
+    font-size: 17px;
     padding: 20px 0px 0px;
 }
 
@@ -5040,9 +5041,11 @@ section.as_testimonial_wrapper {
     }
 
     .as_service_img {
-        position: relative;
-        margin: 50px 0;
-        text-align: center;
+            position: relative;
+            margin: 50px 0;
+            text-align: center;
+            width: 250px;
+            margin: auto;
     }
 
     .as_banner_slider .slick-arrow.as_btn {
@@ -5135,7 +5138,7 @@ section.as_testimonial_wrapper {
 
 @media (max-width:600px) {
     .as_service_img {
-        margin: 0;
+        margin: auto;
     }
 
     span.rating_star img {
