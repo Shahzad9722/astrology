@@ -714,6 +714,10 @@ button.as_btn {
     object-fit: cover;
 }
 
+.caption-color{
+    color: rgb(255, 236, 139) !important;
+}
+
 .as_cart_info {
     width: calc(100% - 70px);
     float: right;
