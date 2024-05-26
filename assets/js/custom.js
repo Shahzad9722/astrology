@@ -160,13 +160,13 @@ document.addEventListener("DOMContentLoaded", function () {
   astrology.init();
 }(jQuery));
 
-// Slider code
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 let currentIndex = 0;
 
 function showSlide(index) {
+  slides[currentIndex].classList.remove('active');
   if (index >= slides.length) {
     currentIndex = 0;
   } else if (index < 0) {
@@ -174,9 +174,11 @@ function showSlide(index) {
   } else {
     currentIndex = index;
   }
+  slides[currentIndex].classList.add('active');
   const offset = -currentIndex * 100;
   document.querySelector(".slides").style.transform = `translateX(${offset}%)`;
 }
+
 
 next.addEventListener("click", () => {
   showSlide(currentIndex + 1);
