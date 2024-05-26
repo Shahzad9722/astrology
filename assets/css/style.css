@@ -4468,7 +4468,7 @@ section.as_testimonial_wrapper {
     }
 
     .as_menu>ul>li>a:hover:after, .as_menu>ul>li>a.active:after, .as_menu>ul>li>a:hover:before{
-        width: 100%;
+        width: 120px;
     }
     /* .as_menu>ul>li>a.active:before {
         display: none;
