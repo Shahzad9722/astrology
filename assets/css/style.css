@@ -30,7 +30,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .hide {
@@ -5138,7 +5138,7 @@ section.as_testimonial_wrapper {
 
 @media (max-width:600px) {
     .as_service_img {
-        margin: 0;
+        margin: auto;
     }
 
     span.rating_star img {
