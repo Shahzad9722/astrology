@@ -127,6 +127,7 @@ const prev = document.querySelector(".prev");
 let currentIndex = 0;
 
 function showSlide(index) {
+  slides[currentIndex].classList.remove('active');
   if (index >= slides.length) {
     currentIndex = 0;
   } else if (index < 0) {
@@ -134,6 +135,7 @@ function showSlide(index) {
   } else {
     currentIndex = index;
   }
+  slides[currentIndex].classList.add('active');
   const offset = -currentIndex * 100;
   document.querySelector(".slides").style.transform = `translateX(${offset}%)`;
 }
@@ -161,9 +163,6 @@ document.querySelector(".slider").addEventListener("mouseout", () => {
     showSlide(currentIndex + 1);
   }, 3000);
 });
-
-
-
 
 
 

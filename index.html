@@ -17,21 +17,52 @@
          href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;family=Great+Vibes&amp;family=PT+Sans:wght@400;700&amp;display=swap"
          rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
       <!-- favicon -->
       <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-      <style>
 
-@keyframes rotateStars {
-    from {
-        transform: rotate(0deg);
+    <style>  
+  /* .caption1,
+.caption2,
+.caption3,
+.caption4,
+.caption5 {
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}*/
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
+}  */
+
+.caption-container {
+    opacity: 1;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide.active .caption-container {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
 }
 
 
-      </style>
+
+
+     </style>
+
    </head>
 
    <body>
@@ -81,14 +112,14 @@
                            <div class="slide">
                               <img src="./assets/images/Bannerfirst.jpg" alt="Image 1">
                               <div class="caption-container">
-                                 <h1 class="caption">Unlock the Secrets of the Stars with our Personalized Astrology
+                                 <h1 class="caption caption1">Unlock the Secrets of the Stars with our Personalized Astrology
                                     Readings</h1>
                               </div>
                            </div>
                            <div class="slide">
                               <img src="./assets/images/Bannersecond.jpeg" alt="Image 2">
                               <div class="caption-container">
-                              <h1 class="caption">Balancing energies for a happier life</h1>
+                              <h1 class="caption caption2">Balancing energies for a happier life</h1>
                               </div>
                            </div>
                            <div class="slide">
@@ -111,13 +142,13 @@
                            </div>
                         </div>
                      </div>
-                     <button class="prev">&#10094;</button>
-                     <button class="next">&#10095;</button>
+                     <button class="prev"  data-bs-target="#myCarousel">&#10094;</button>
+                     <button class="next"  data-bs-target="#myCarousel">&#10095;</button>
                   </div>
-                     <script src="script.js"></script>
+                     <!-- <script src="script.js"></script> -->
                   </div>
                </div>
-            </div>
+           
          </section>
          <section class="as_about_wrapper as_section_light" id="welcome">
             <div class="container">
@@ -188,7 +219,7 @@
                         <h3 class="as_heading as_heading_center">OUR SERVICES</h3>
                         <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
                      </div>
-                     <p class="as_text_color">Discover a range of services offered by Dr. Sambath Subramani, including personalized astrology
+                     <p class="as_text_color ">Discover a range of services offered by Dr. Sambath Subramani, including personalized astrology
                         consultations, Vastu Shastra guidance, and innovative ALP Astrology sessions .</p>
                   </div>
                </div>
@@ -242,7 +273,7 @@
                      <div class="as_service_box as_text_rigth">
                         <div class="as_service_inner_icon">
                            <span class="as_icon">
-                              <img src="assets/images/svg/palm.svg" width="65px" height="65px" alt="">
+                              <img src="assets/images/svg/palm222.svg" width="65px" height="65px" alt="">
                            </span>
                         </div>
                         <div class="as_service_inner_content">
@@ -311,7 +342,7 @@
                   <div class="col-lg-12 col-md-12 text-center">
                      <div class="heading_sections">
                         <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
-                        <h3 class="as_heading">GALLERY</h3>
+                        <h3 class="as_heading" >GALLERY</h3>
                         <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
                      </div>
                      <br>
@@ -498,9 +529,13 @@
             </div>
          </section>
       </div>
+    
       <a href="https://wa.me/+918148836708" class="whatsapp-float" target="_blank">
          <i class="fab fa-whatsapp"></i>
       </a>
+
+
+
       <script>
          const apiKey = 'AIzaSyCUdLOcICzvkkv2loFVxQx4eWTUmD_Jhj4';
          const channelId = 'YOUR_CHANNEL_ID';
@@ -542,6 +577,7 @@
          src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
       <script src="assets/js/jquery.js"></script>
       <script src="assets/js/bootstrap.js"></script>
+      
       <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/custom.js"></script>
       <script>(function() {if (!document.body) return; var js = "window['__CF$cv$params']={r:'8856a1396f1b907a',t:'MTcxNTk4MDYwMC4xMjYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/695da7821231/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) {var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj);} } if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function() {}; document.onreadystatechange = function(e) {prev(e); if (document.readyState !== 'loading') {document.onreadystatechange = prev; handler();} };} })();</script>
