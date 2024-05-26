@@ -1,3 +1,66 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("toggleIcon");
+  const menu = document.getElementById("menu");
+  const body = document.body;
+  const menuItems = menu.querySelectorAll("li");
+
+  let isMenuOpen = false;
+
+  function isSmallScreen() {
+    const mediaQuery = window.matchMedia("(max-width: 768px)"); 
+    return mediaQuery.matches;
+  }
+
+  menuToggle.addEventListener("click", function (event) {
+    if (isSmallScreen()) {
+      event.stopPropagation();
+      toggleMenu();
+    }
+  });
+
+  function toggleMenu() {
+    if (isSmallScreen()) {
+      if (!isMenuOpen) {
+        menu.style.display = "block";
+        menu.style.transition = "all 0.5s ease-in";
+        body.classList.add("menu");
+        isMenuOpen = true;
+      } else {
+        menu.style.display = "none";
+        body.classList.remove("menu");
+        isMenuOpen = false;
+      }
+    }
+  }
+
+  document.addEventListener("click", function (event) {
+    if (isSmallScreen() && isMenuOpen && !menu.contains(event.target) && event.target !== menuToggle) {
+      toggleMenu();
+    }
+  });
+
+  menuItems.forEach(function (item) {
+    item.addEventListener("click", function (event) {
+      const link = item.querySelector("a");
+      if (link) {
+        const href = link.getAttribute("href");
+        if (href.startsWith("#")) {
+          event.preventDefault();
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        } 
+      }
+      toggleMenu();
+    });
+  });
+});
+
+
+
+
 (function($) {
   "use strict";
   var astrology = {
@@ -28,11 +91,7 @@
       },
 
       // 
-      toggle: function() {
-        $(".as_toggle").click(function(){
-          $('body').toggleClass("menuOpen");
-        });
-      },
+   
       // 
       toggleSubmenu: function() {
         $('.as_menu ul li a').click(function(e) {
@@ -165,8 +224,21 @@ document.querySelector(".slider").addEventListener("mouseout", () => {
 });
 
 
+$('body').addClass("menuOpen");
+var menuOpen = {
+  init: function() {
+     
+      
 
+      // Attach click event to toggle button
+      $(".as_toggle").click(function(){
+          $('body').toggleClass("menuOpen");
+      });
+  }
+};
 
+// Call the init method to initialize the functionality
+menuOpen.init();
 
 
 
