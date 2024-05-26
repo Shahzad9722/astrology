@@ -16,12 +16,10 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     margin: 0;
-    background-color: var(--dark-color2);
-    /* color: var(--white-color);
-     */
+    background-color: #204824 !important;
     color: #EBC26A;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
@@ -2259,7 +2257,7 @@ a.as_btn.as_btn_newsletter {
 
 .as_footer_widget>p {
     margin: 18px 0 20px;
-    font-size: 16px;
+    font-size: 17px;
     color: #ECD9AE;
 }
 
@@ -2276,7 +2274,7 @@ a.as_btn.as_btn_newsletter {
 .as_footer_widget>ul>li {
     padding-bottom: 10px;
     position: relative;
-    font-size: 16px;
+    font-size: 17px;
     padding-left: 18px;
     transition: all 0.5s;
     color: #ECD9AE;
@@ -3155,6 +3153,7 @@ li.as_info_box p {
 
 .as_contact_wrapper .as_appointment_form textarea.form-control {
     height: 155px;
+    font-size: 20px;
 }
 
 section.as_appointment_wrapper {
@@ -3389,7 +3388,7 @@ section.as_contact_wrapper {
 }
 
 .as_appointment_form .form-group>input {
-    font-size: 18px;
+    font-size: 21px;
     line-height: calc(50px - (14px - 2px));
     letter-spacing: .13em;
 }
@@ -4479,8 +4478,8 @@ section.as_testimonial_wrapper {
     }
     .as_menu>ul>li>a.active{
         font-weight: bold;
-        font-size: 14px;
-    } */
+        font-size: 17px;
+    }
 
 
  
@@ -4777,6 +4776,7 @@ section.as_testimonial_wrapper {
         font-family: "lota";
         line-height: 23px;
         color: #c9ab81;
+        font-size: 16px;
     }
     .as_menu>ul>li>a.active {
             color: #c9ab81;
@@ -5292,7 +5292,7 @@ section.as_testimonial_wrapper {
     }
 
     li.as_info_box p {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     form.as_appointment_form {
@@ -5697,7 +5697,7 @@ section.as_testimonial_wrapper {
 
 .datetime-select {
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
     border: 1px solid rgb(255 255 255 / 17%);
     border-radius: 5px;
     background-color: transparent;
