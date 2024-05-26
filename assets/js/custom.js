@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("toggleIcon");
   const menu = document.getElementById("menu");
   const body = document.body;
@@ -6,34 +6,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let isMenuOpen = false;
 
-  menuToggle.addEventListener("click", function(event) {
-    event.stopPropagation(); // Prevents the click event from bubbling up to the document body
-    toggleMenu();
-  });
-
-  function toggleMenu() {
-    if (!isMenuOpen) {
-      menu.style.display = "block";
-      menu.style.transition = "all 0.5s ease-in";
-      body.classList.add("menu");
-      isMenuOpen = true;
-    } else {
-      menu.style.display = "none";
-      body.classList.remove("menu");
-      isMenuOpen = false;
-    }
+  // Function to check if the screen size is small enough for the responsive menu
+  function isSmallScreen() {
+    const mediaQuery = window.matchMedia("(max-width: 768px)"); // Adjust the breakpoint as needed
+    return mediaQuery.matches;
   }
 
-  // Close the menu when clicking outside of it
-  document.addEventListener("click", function(event) {
-    if (isMenuOpen && !menu.contains(event.target) && event.target !== menuToggle) {
+  // Event listener for toggle button click (only works on small screens)
+  menuToggle.addEventListener("click", function (event) {
+    if (isSmallScreen()) {
+      event.stopPropagation(); // Prevents bubbling up the click event
       toggleMenu();
     }
   });
 
-  // Close the menu when clicking on a menu item
-  menuItems.forEach(function(item) {
-    item.addEventListener("click", function(event) {
+  // Function to toggle the menu (only applies on small screens)
+  function toggleMenu() {
+    if (isSmallScreen()) {
+      if (!isMenuOpen) {
+        menu.style.display = "block";
+        menu.style.transition = "all 0.5s ease-in";
+        body.classList.add("menu");
+        isMenuOpen = true;
+      } else {
+        menu.style.display = "none";
+        body.classList.remove("menu");
+        isMenuOpen = false;
+      }
+    }
+  }
+
+  // Close the menu when clicking outside of it (only on small screens)
+  document.addEventListener("click", function (event) {
+    if (isSmallScreen() && isMenuOpen && !menu.contains(event.target) && event.target !== menuToggle) {
+      toggleMenu();
+    }
+  });
+
+  // Close the menu when clicking on a menu item (works on all screen sizes)
+  menuItems.forEach(function (item) {
+    item.addEventListener("click", function (event) {
       const link = item.querySelector("a");
       if (link) {
         const href = link.getAttribute("href");
@@ -47,12 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
             targetElement.scrollIntoView({ behavior: "smooth" });
           }
         } else {
-          // For links targeting other pages, let the default behavior handle the navigation
-          // The menu will be closed after the navigation completes
-          return;
+          // Handle external links (optional)
+          // return; // Uncomment this line if you want to prevent navigation for external links
         }
       }
-      // Hide the menu after performing the action
       toggleMenu();
     });
   });
