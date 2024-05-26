@@ -84,19 +84,18 @@
                            <div id="menu" class="as_menu">
                               <ul>
                                  <li><a href="index.html" class="active">HOME</a></li>
-                                 <li><a href="#welcome">WELCOME</a></li>
+                                 <li id="about1"></li>
+                                 <li id="services1"></li>
                                  <li>
-                                    <a href="#services">SERVICES</a>
+                                    <a href="index.html#videos">VIDEOS</a>
                                  </li>
-                                 <li>
-                                    <a href="#videos">VIDEOS</a>
-                                 </li>
-                                 <li>
-                                    <a href="#gallery">GALLERY</a>
-                                 </li>
+                                 <li id="gallery1"></li>
+                                
                                  <li><a href="contact.html">CONTACT US</a></li>
                               </ul>
                            </div>
+
+                        
                         </div>
                      </div>
                   </div>
@@ -549,6 +548,32 @@
 
 
       <script>
+
+
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
+
+function updateContactLink() {
+    var about = document.getElementById('about1');
+    var gallery  = document.getElementById('gallery1');
+    var services = document.getElementById('services1');
+    var video = document.getElementById('video1');
+    if (isMobileDevice()) {
+      about.innerHTML = '<a href="about.html">Welcome</a>';
+      gallery.innerHTML = '<a href="gallery.html">Gallery</a>';
+      services.innerHTML = '<a href="services.html">Services</a>';
+    } else {
+      about.innerHTML = '<a href="#welcome">Welcome</a>';
+      gallery.innerHTML = '<a href="#gallery">Gallery</a>';
+      services.innerHTML = '<a href="#services">Services</a>';
+    }
+}
+
+
+updateContactLink();
+window.addEventListener('resize', updateContactLink);
 
 
          const apiKey = 'AIzaSyCUdLOcICzvkkv2loFVxQx4eWTUmD_Jhj4';
