@@ -4468,7 +4468,7 @@ section.as_testimonial_wrapper {
     }
 
     .as_menu>ul>li>a:hover:after, .as_menu>ul>li>a.active:after, .as_menu>ul>li>a.active:before, .as_menu>ul>li>a:hover:before{
-        width: 80px;
+        width: 170px;
     }
     /* .as_menu>ul>li>a.active:before {
         display: none;
@@ -4796,10 +4796,12 @@ section.as_testimonial_wrapper {
     .as_menu>ul>li>a:after{
         left: 11%;
         bottom:4px;
+        transition: width 0.1s ease;
     }
     .as_menu>ul>li>a:before{
             left: 11%;
             bottom: 7px;
+        transition: width 0.1s ease;
         }
 
     .prod_quantity {
