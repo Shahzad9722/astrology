@@ -551,7 +551,7 @@ button.as_btn {
 .as_menu>ul>li>a.active:after,
 .as_menu>ul>li>a:hover:before,
 .as_menu>ul>li>a.active:before {
-    width: 170px;
+    width: 100px;
 }
 
 .as_menu ul li a:hover,
@@ -4467,8 +4467,8 @@ section.as_testimonial_wrapper {
         color: #ECD9AE;
     }
 
-    .as_menu>ul>li>a:hover:after, .as_menu>ul>li>a.active:after, .as_menu>ul>li>a:hover:before{
-        width: 170px;
+    .as_menu>ul>li>a:hover:after, .as_menu>ul>li>a.active:after, .as_menu>ul>li>a.active:before, .as_menu>ul>li>a:hover:before{
+        width: 80px;
     }
     /* .as_menu>ul>li>a.active:before {
         display: none;
@@ -4785,14 +4785,13 @@ section.as_testimonial_wrapper {
     .as_menu>ul>li>a.active {
             color: #c9ab81;
         }
-    .as_menu>ul>li>a.active::after {
+    
+        .as_menu>ul>li>a:hover:after,
+        .as_menu>ul>li>a.active:after,
+        .as_menu>ul>li>a.active:before,
+        .as_menu>ul>li>a:hover:before {
             width: 170px;
-            bottom: 4px
-          }
-    .as_menu>ul>li>a.active::before{
-        width: 170px;
-        bottom: 7px;
-    }
+        }
         
     .as_menu>ul>li>a:after{
         left: 11%;
