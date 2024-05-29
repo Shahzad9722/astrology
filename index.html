@@ -18,13 +18,11 @@
          rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
       <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
       <!-- favicon -->
       <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
-    <style>  
-  /* .caption1,
+      <style>
+         /* .caption1,
 .caption2,
 .caption3,
 .caption4,
@@ -35,8 +33,7 @@
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
 }*/
-
-/* @keyframes fadeIn {
+         /* @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(-50%);
@@ -46,62 +43,52 @@
         transform: translateY(0);
     }
 }  */
+         .caption-container {
+            opacity: 1;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+         }
 
-.caption-container {
-    opacity: 1;
-    transform: scale(0.8); 
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
-}
-
-.slide.active .caption-container {
-    opacity: 1;
-    transform: scale(1); 
-}
-
-
-
-
-
-     </style>
-
+         .slide.active .caption-container {
+            opacity: 1;
+            transform: scale(1);
+         }
+      </style>
    </head>
 
    <body>
-            <section class="as_header_wrapper">
-               <div class="row">
-                  <div class=" col-md-2 col-lg-3 col-sm-4 col-xs-6">
-                     <div class="as_logo">
-                        <a href="index.html">
-                           <img src="assets/images/svg/logo.svg" alt="">
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-md-10 col-lg-9 col-sm-8 col-xs-6">
-                     <div class="as_right_info">
-                        <div class="as_menu_wrapper">
-                           <span class="as_toggle">
-                              <img id="toggleIcon" src="assets/images/svg/menu.svg" alt="">
-                           </span>
-                           <div id="menu" class="as_menu">
-                              <ul>
-                                 <li><a href="index.html" class="active">HOME</a></li>
-                                 <li id="about1"></li>
-                                 <li id="services1"></li>
-                                 <li>
-                                    <a href="#videos">VIDEOS</a>
-                                 </li>
-                                 <li id="gallery1"></li>
-                                
-                                 <li><a href="contact.html">CONTACT US</a></li>
-                              </ul>
-                           </div>
-
-                        
-                        </div>
+      <section class="as_header_wrapper">
+         <div class="row">
+            <div class=" col-md-2 col-lg-3 col-sm-4 col-xs-6">
+               <div class="as_logo">
+                  <a href="index.html">
+                     <img src="assets/images/svg/logo.svg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-10 col-lg-9 col-sm-8 col-xs-6">
+               <div class="as_right_info">
+                  <div class="as_menu_wrapper">
+                     <span class="as_toggle">
+                        <img id="toggleIcon" src="assets/images/svg/menu.svg" alt="">
+                     </span>
+                     <div id="menu" class="as_menu">
+                        <ul>
+                           <li><a href="index.html" class="active">HOME</a></li>
+                           <li id="about1"></li>
+                           <li id="services1"></li>
+                           <li>
+                              <a href="#videos">VIDEOS</a>
+                           </li>
+                           <li id="gallery1"></li>
+                           <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
                      </div>
                   </div>
                </div>
-            </section>
+            </div>
+         </div>
+      </section>
       <div class="as_main_wrapper">
          <section class="as_banner_wrapper">
             <div class="">
@@ -112,64 +99,68 @@
                            <div class="slide">
                               <img src="./assets/images/Bannerfirst.jpg" alt="Image 1">
                               <div class="caption-container">
-                                 <h1 class="caption caption1">Unlock the Secrets of the Stars with our Personalized Astrology
-                                    Readings</h1>
+                                 <h1 class="caption caption1">Unlock the Secrets of the Stars with our Personalized
+                                    Astrology Readings</h1>
                               </div>
                            </div>
                            <div class="slide">
                               <img src="./assets/images/Bannersecond.jpeg" alt="Image 2">
                               <div class="caption-container">
-                              <h1 class="caption caption2">Balancing energies for a happier life</h1>
+                                 <h1 class="caption caption2">Balancing energies for a happier life</h1>
                               </div>
                            </div>
                            <div class="slide">
                               <img src="./assets/images/Bannerthree.png" alt="Image 3">
                               <div class="caption-container">
-                              <h1 class="caption caption-color">Empowering Lives, Energizing Souls</h1>
+                                 <h1 class="caption caption-color">Empowering Lives, Energizing Souls</h1>
                               </div>
                            </div>
                            <div class="slide">
                               <img src="./assets/images/Bannerfour.jpeg" alt="Image 4">
                               <div class="caption-container">
-                              <h1 class="caption">Every hand reveals the truth <br>Unleash your powers</h1>
+                                 <h1 class="caption">Every hand reveals the truth <br>Unleash your powers</h1>
                               </div>
                            </div>
                            <div class="slide">
                               <img src="./assets/images/Bannerfive.jpg" alt="Image 5">
                               <div class="caption-container">
-                              <h1 class="caption caption-color">360&#176; solutions for holistic living</h1>
+                                 <h1 class="caption caption-color">360&#176; solutions for holistic living</h1>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <button class="prev"  data-bs-target="#myCarousel">&#10094;</button>
-                     <button class="next"  data-bs-target="#myCarousel">&#10095;</button>
+                     <button class="prev" data-bs-target="#myCarousel">&#10094;</button>
+                     <button class="next" data-bs-target="#myCarousel">&#10095;</button>
                   </div>
-                     <!-- <script src="script.js"></script> -->
-                  </div>
+                  <!-- <script src="script.js"></script> -->
                </div>
-           
+            </div>
          </section>
          <div id="welcome" class="py-4 as_section_light "> </div>
-         <section class=" as_about_wrapper as_section_light" >
+         <section class=" as_about_wrapper as_section_light">
             <div class="container">
                <div class="row">
                   <div class="col-lg-6 col-md-12">
                      <div class="as-about-heading p-3">
                         <div class="heading_sections">
-                           <img src="assets/images/svg/diamond.svg"  alt="Centered Image" class="centered-image">
+                           <img src="assets/images/svg/diamond.svg" alt="Centered Image" class="centered-image">
                            <h3 class="as_heading">AN INTRODUCTION</h3>
-                           <img src="assets/images/svg/diamond.svg"  alt="Centered Image" class="centered-image">
+                           <img src="assets/images/svg/diamond.svg" alt="Centered Image" class="centered-image">
                         </div>
-                           <div class="col-lg-6 col-md-12 vishnu_mobile">
-                              <div class="as_aboutimg text-right">
-                                 <img src="assets/images/vishnu.png" alt="" class="img-responsive">
-                              </div>
+                        <div class="col-lg-6 col-md-12 vishnu_mobile">
+                           <div class="as_aboutimg text-right">
+                              <img src="assets/images/vishnu.png" alt="" class="img-responsive">
                            </div>
-                        <p class="as_text_color">Dr. Sambath Subramani, a distinguished astrologer and Vastu consultant, has dedicated the past 10 years to helping individuals lead happy and prosperous lives. Known for his devotion to <b>Lord Murugan </b>, Dr. Sambath Subramani is highly regarded for his exceptional services in astrology and Vastu. Since 2014, he has been researching the connection between temples, astrology, and Vastu, leading him to the innovative field of ALP Astrology, also known as Akshaya Lagna Paddhati. This scientific approach has enabled him to mentor many in utilizing astrology for accurate daily predictions.
-                       <br><br>
-                       His followers worldwide have experienced profound positivity and enlightenment through his predictions in both astrology and Vastu. Some of the life-changing benefits they have reported include:
-                        </p>
+                        </div>
+                        <p class="as_text_color">Dr. Sambath Subramani, a distinguished astrologer and Vastu consultant,
+                           has dedicated the past 10 years to helping individuals lead happy and prosperous lives. Known
+                           for his devotion to <b>Lord Murugan </b>, Dr. Sambath Subramani is highly regarded for his
+                           exceptional services in astrology and Vastu. Since 2014, he has been researching the
+                           connection between temples, astrology, and Vastu, leading him to the innovative field of ALP
+                           Astrology, also known as Akshaya Lagna Paddhati. This scientific approach has enabled him to
+                           mentor many in utilizing astrology for accurate daily predictions. <br><br> His followers
+                           worldwide have experienced profound positivity and enlightenment through his predictions in
+                           both astrology and Vastu. Some of the life-changing benefits they have reported include: </p>
                         <div class="as_about_inner">
                            <div class="as_about_inner1">
                               <p class="as_text_color">
@@ -212,17 +203,21 @@
             </div>
          </section>
          <div id="services" class="py-4 as_section_light "> </div>
-         <section class="as_service_wrapper as_section_light_dark px-3" >
+         <section class="as_service_wrapper as_section_light_dark px-3">
             <div class="container">
                <div class="row ">
                   <div class="col-lg-12 text-center">
                      <div class="heading_sections">
-                       <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                         <h3 class="as_heading as_heading_center">OUR SERVICES</h3>
-                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                      </div>
-                     <p class="as_text_color mb-0">Discover a range of services offered by Dr. Sambath Subramani, including </p> <p class="as_text_color"> personalized astrology
-                        consultations, Vastu Shastra guidance, and innovative ALP Astrology sessions .</p>
+                     <p class="as_text_color mb-0">Discover a range of services offered by Dr. Sambath Subramani,
+                        including </p>
+                     <p class="as_text_color"> personalized astrology consultations, Vastu Shastra guidance, and
+                        innovative ALP Astrology sessions .</p>
                   </div>
                </div>
                <div class="row d-flex justify-content-between">
@@ -247,7 +242,6 @@
                            <h4 class="as_subheading"><a href="services.html">VASTUSHASTRAM </a></h4>
                         </div>
                      </div>
-                   
                   </div>
                   <div class="col-lg-4 col-md-12 col-dm-12 ">
                      <div class="as_service_box as_text_left">
@@ -284,25 +278,28 @@
                      </div>
                   </div>
                </div>
-                  <div class="text-center mt-4 ">
-                     <a href="services.html" class="as_btn as_margin_top_40">View More</a>
-                  </div>
+               <div class="text-center mt-4 ">
+                  <a href="services.html" class="as_btn as_margin_top_40">View More</a>
+               </div>
             </div>
          </section>
          <div id="videos" class="py-4 as_section_light "> </div>
-         <section class="as_product_wrapper as_section_dark" >
+         <section class="as_product_wrapper as_section_dark">
             <div class="container p-4">
                <div class="row">
-                  <div class="col-lg-12 col-md-12 text-center d-flex justify-content-center align-items-center flex-column">
+                  <div
+                     class="col-lg-12 col-md-12 text-center d-flex justify-content-center align-items-center flex-column">
                      <div class="heading_sections">
-                     <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
-                     <h3 class="as_heading">WATCH OUR VIDEOS</h3>
-                     <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
+                        <h3 class="as_heading">WATCH OUR VIDEOS</h3>
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                      </div>
-                     <p class="as_text_color mb-4">Watch Dr. Sambath Subramani share his insights on ALP Astrology, blending traditional
-                        wisdom with modern techniques for accurate daily predictions. <br> Discover how his expertise in astrology and Vastu
-                        can enhance your life.</p>
-                        <br>
+                     <p class="as_text_color mb-4">Watch Dr. Sambath Subramani share his insights on ALP Astrology,
+                        blending traditional wisdom with modern techniques for accurate daily predictions. <br> Discover
+                        how his expertise in astrology and Vastu can enhance your life.</p>
+                     <br>
                      <div class="row videos_section">
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
@@ -312,10 +309,9 @@
                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
-                              <a href="https://www.youtube.com/watch?v=Ddgyqr7xgP0" class="as_btn" style="border: 1px solid; width: 100%;">watch on Youtube</a>
-                         
-                          </div>
-                      
+                              <a href="https://www.youtube.com/watch?v=Ddgyqr7xgP0" class="as_btn"
+                                 style="border: 1px solid; width: 100%;">watch on Youtube</a>
+                           </div>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
@@ -325,66 +321,70 @@
                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
-                              <a href="https://www.youtube.com/watch?v=TN9QS8ivLG0" class="as_btn" style="border: 1px solid; width: 100%;">watch on Youtube</a>
-                         
-                          </div>
-                      
+                              <a href="https://www.youtube.com/watch?v=TN9QS8ivLG0" class="as_btn"
+                                 style="border: 1px solid; width: 100%;">watch on Youtube</a>
+                           </div>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                            <div class="video">
-                  <iframe width="100%" height="250px" src="https://www.youtube.com/embed/CiXftLaNiTs"
-                     title="நாளை செவ்வாய் கிழமையில் இதை செய்தால் போதும் அடகு போன நகையை மீட்களாம் | ALP SAMPATH SUBRAMANI ASTRO"
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/CiXftLaNiTs"
+                                 title="நாளை செவ்வாய் கிழமையில் இதை செய்தால் போதும் அடகு போன நகையை மீட்களாம் | ALP SAMPATH SUBRAMANI ASTRO"
+                                 frameborder="0"
+                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                               <!-- <a class="bg-secondary" width="100%" href="https://www.youtube.com/watch?v=gqbf2aWLQ94">Video On Youtube</a> -->
-                              <a href="https://www.youtube.com/watch?v=CiXftLaNiTs" class="as_btn" style="border: 1px solid; width: 100%;">watch on Youtube</a>
-                         
-                          </div>
-                      
+                              <a href="https://www.youtube.com/watch?v=CiXftLaNiTs" class="as_btn"
+                                 style="border: 1px solid; width: 100%;">watch on Youtube</a>
+                           </div>
                         </div>
                      </div>
-                        <div class="text-center mt-4 ">
-                           <a href="https://www.youtube.com/@sambathSubramani-astrologer" class="as_btn as_margin_top_40 view-more-btn">view more</a>
-                        </div>
+                     <div class="text-center mt-4 ">
+                        <a href="https://www.youtube.com/@sambathSubramani-astrologer"
+                           class="as_btn as_margin_top_40 view-more-btn">view more</a>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
          <div class="py-4 as_section_light " id="gallery"> </div>
-         <section class="as_blog_wrapper as_section_light" >
+         <section class="as_blog_wrapper as_section_light">
             <div class="container">
                <div class="row">
                   <div class="col-lg-12 col-md-12 text-center">
                      <div class="heading_sections">
-                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
-                        <h3 class="as_heading" >GALLERY</h3>
-                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
+                        <h3 class="as_heading">GALLERY</h3>
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                      </div>
                      <br>
-                     <p class="as_text_color">Explore the expertise of Dr. Sambath Subramani, a renowned astrologer and Vastu consultant,
-                        dedicated to enhancing lives through his innovative ALP Astrology. <br> With 10 years of devotion and research, he
-                        merges temple wisdom, astrology, and Vastu for precise daily prediction </p>
-                        <br>
+                     <p class="as_text_color">Explore the expertise of Dr. Sambath Subramani, a renowned astrologer and
+                        Vastu consultant, dedicated to enhancing lives through his innovative ALP Astrology. <br> With
+                        10 years of devotion and research, he merges temple wisdom, astrology, and Vastu for precise
+                        daily prediction </p>
+                     <br>
                      <div class="v3_blog_wrapper">
                         <div class="row text-left">
                            <div class="col-lg-4 col-md-6 col-sm-12">
-                           <div class="as_blog_box">
-                              <div class="as_blog_img">
-                                 <img class="as_img" src="assets/images/vishnu2.jpg" alt="">
-                                 <div class="overlay">
-                                    <img src="assets/images/svg/diamond.svg" width="100px" height="50px" alt="Centered Image" class="centered-image">
+                              <div class="as_blog_box">
+                                 <div class="as_blog_img">
+                                    <img class="as_img" src="assets/images/vishnu2.jpg" alt="">
+                                    <div class="overlay">
+                                       <img src="assets/images/svg/diamond.svg" width="100px" height="50px"
+                                          alt="Centered Image" class="centered-image">
+                                    </div>
                                  </div>
                               </div>
-                           </div>
                            </div>
                            <div class="col-lg-4 col-md-6 col-sm-12">
                               <div class="as_blog_box">
                                  <div class="as_blog_img">
-                                 <img src="assets/images/vishnu3.jpg" alt="">
-                                 <div class="overlay">
-                                    <img src="assets/images/svg/diamond.svg" width="100px" height="50px" alt="Centered Image" class="centered-image">
-                                 </div>
+                                    <img src="assets/images/vishnu3.jpg" alt="">
+                                    <div class="overlay">
+                                       <img src="assets/images/svg/diamond.svg" width="100px" height="50px"
+                                          alt="Centered Image" class="centered-image">
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -393,13 +393,14 @@
                                  <div class="as_blog_img">
                                     <a href="blog_detail.html"><img src="assets/images/vishnu4.jpg" alt=""
                                           class="img-responsive"></a>
-                                          <div class="overlay">
-                                             <img src="assets/images/svg/diamond.svg" width="100px" height="50px" alt="Centered Image" class="centered-image">
-                                          </div>
+                                    <div class="overlay">
+                                       <img src="assets/images/svg/diamond.svg" width="100px" height="50px"
+                                          alt="Centered Image" class="centered-image">
+                                    </div>
                                  </div>
                               </div>
-                              </div>
-                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="text-center gallery-btn mt-4 ">
                         <a href="gallery.html" class="as_btn as_margin_top_40">view more</a>
@@ -413,9 +414,11 @@
                <div class="row">
                   <div class="col-lg-12 text-center">
                      <div class="heading_sections">
-                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                         <h3 class="as_heading as_heading_center ">TESTIMONIALS</h3>
-                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
                      </div>
                   </div>
                   <div class="as_testimonial_slider_inner">
@@ -424,77 +427,89 @@
                            <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                  <div class="as_testimonial_inner_content">
-                                    <p>Pranams to Guruji 🙏🏼
-                                       </p><p>
-                                 Meeting Dr. ALP Sampath sir changed my life. He helped me overcome my marital problems through worship and guidance.
-                                 Participating in SathruSamhara pooja in 2022 brought clarity and peace. Special prayers in 2023 resolved my issues,
-                                 ending years of suffering. I am grateful to be part of this spiritual journey with my Guruji.</p>
+                                    <p>Pranams to Guruji 🙏🏼 </p>
+                                    <p> Meeting Dr. ALP Sampath sir changed my life. He helped me overcome my marital
+                                       problems through worship and guidance. Participating in SathruSamhara pooja in
+                                       2022 brought clarity and peace. Special prayers in 2023 resolved my issues,
+                                       ending years of suffering. I am grateful to be part of this spiritual journey
+                                       with my Guruji.</p>
                                     <h5>Muralidaran, G Trichy</h5>
                                  </div>
                               </div>
                               <div class="swiper-slide">
                                  <div class="as_testimonial_inner_content">
-                                    <p>
-                                       Dr. ALP Sampath Subramani has profoundly transformed my life with his accurate diagnoses and practical, spiritual
-                                       solutions. His unique blend of traditional Vedic astrology and modern insights offers a holistic approach to overcoming
-                                       challenges. The personalized consultations and powerful rituals, such as the SathruSamhara Pooja, have brought clarity,
-                                       peace, and positive change to my family and business life. Dr. Sampath Subramani’s guidance is invaluable for those
-                                       seeking astrological and spiritual support. Thank you, sir, for your unwavering guidance and support.
-                                    </p>
+                                    <p> Dr. ALP Sampath Subramani has profoundly transformed my life with his accurate
+                                       diagnoses and practical, spiritual solutions. His unique blend of traditional
+                                       Vedic astrology and modern insights offers a holistic approach to overcoming
+                                       challenges. The personalized consultations and powerful rituals, such as the
+                                       SathruSamhara Pooja, have brought clarity, peace, and positive change to my
+                                       family and business life. Dr. Sampath Subramani’s guidance is invaluable for
+                                       those seeking astrological and spiritual support. Thank you, sir, for your
+                                       unwavering guidance and support. </p>
                                     <h5>Jeyas Agro Tech Chennai</h5>
                                  </div>
                               </div>
                               <div class="swiper-slide">
                                  <div class="as_testimonial_inner_content">
-                                    <p>Iam Monica from trichy .My family Visited sambath sir 8 month back . We are very thankful to God and universe for
-                                    introducing such a humble and great human. We are following all the tips given by sir they are giving very positive
-                                    vibes and spiritual mind. We visited chennai vetri vel murugan temple they We saw chilli powder abisagam for sir there
-                                    We saw the superpower of lord murugan After coming from there I saw the magic of lord murugan . On vaikasi(Visakam
-                                    )birthday of lord murugan as sir said muruga will send the needed message by something. On that day ,I was in fasting
-                                    went to murugan temple,but temple was closed there I was mesmerized by one person who was sitting near temple suddenly
-                                    called me and gave answer for my critical problem I has no words to express this situation. Because there I felt lord
-                                    muruga came for me .Believe and do things told by sir miracles will start happening for you also by muruga.
-                                    </p>
-                                    <p>🙏Om Saravana
-                                    bhava🙏</p>
+                                    <p>Iam Monica from trichy .My family Visited sambath sir 8 month back . We are very
+                                       thankful to God and universe for introducing such a humble and great human. We
+                                       are following all the tips given by sir they are giving very positive vibes and
+                                       spiritual mind. We visited chennai vetri vel murugan temple they We saw chilli
+                                       powder abisagam for sir there We saw the superpower of lord murugan After coming
+                                       from there I saw the magic of lord murugan . On vaikasi(Visakam )birthday of lord
+                                       murugan as sir said muruga will send the needed message by something. On that day
+                                       ,I was in fasting went to murugan temple,but temple was closed there I was
+                                       mesmerized by one person who was sitting near temple suddenly called me and gave
+                                       answer for my critical problem I has no words to express this situation. Because
+                                       there I felt lord muruga came for me .Believe and do things told by sir miracles
+                                       will start happening for you also by muruga. </p>
+                                    <p>🙏Om Saravana bhava🙏</p>
                                     <h5>Monica, Trichy</h5>
                                  </div>
                               </div>
                               <div class="swiper-slide">
                                  <div class="as_testimonial_inner_content">
-                                    <p>I am Devibala from Trichy. For ten years, I struggled in a joint family, facing numerous challenges and hardships. Every
-                                    day was filled with tears and pain. However, my life began to change after meeting Sambath Sir. He advised me to remain
-                                    patient and assured me that a happier life was on the horizon. Amazingly, just a month later, things started to improve
-                                    as he predicted. My husband decided that we should live separately, a decision that brought immense relief and joy to my
-                                    life. Words cannot express the gratitude I feel. Thank you, Universe!
-                                   </p>
-                                   <p>வேலுண்டு வினையில்லை மயிலுண்டு பயமில்லை குகனுண்டு குறையில்லை கந்தனுண்டு கவலையில்லை மனமே.</p>
+                                    <p>I am Devibala from Trichy. For ten years, I struggled in a joint family, facing
+                                       numerous challenges and hardships. Every day was filled with tears and pain.
+                                       However, my life began to change after meeting Sambath Sir. He advised me to
+                                       remain patient and assured me that a happier life was on the horizon. Amazingly,
+                                       just a month later, things started to improve as he predicted. My husband decided
+                                       that we should live separately, a decision that brought immense relief and joy to
+                                       my life. Words cannot express the gratitude I feel. Thank you, Universe! </p>
+                                    <p>வேலுண்டு வினையில்லை மயிலுண்டு பயமில்லை குகனுண்டு குறையில்லை கந்தனுண்டு கவலையில்லை
+                                       மனமே.</p>
                                     <h5>Devibala, Trichy</h5>
                                  </div>
                               </div>
-                                 <div class="swiper-slide">
-                                    <div class="as_testimonial_inner_content">
-                                       <p>Guru Sampath Subramani's guidance in astrology and Vastu has been a true blessing in our lives. His down-to-earth nature
-                                       and simple explanations make complex concepts easy to understand. Through his practical remedies shared via YouTube
-                                       channels, like lighting lamps every Tuesday in Tiruporur, we've experienced remarkable results. The increasing number of
-                                       devotees following his advice speaks volumes about his impact. We're grateful to have met such a compassionate and
-                                       knowledgeable mentor. Thanks to his help, many have found solutions to their problems and experienced profound
-                                       transformations. We pray for his continued good health and service to others.</p>
-                                       <h5>Sukhamala & Vaidyanaathan, ARR Schools, Kumbakonam</h5>
-                                    </div>
+                              <div class="swiper-slide">
+                                 <div class="as_testimonial_inner_content">
+                                    <p>Guru Sampath Subramani's guidance in astrology and Vastu has been a true blessing
+                                       in our lives. His down-to-earth nature and simple explanations make complex
+                                       concepts easy to understand. Through his practical remedies shared via YouTube
+                                       channels, like lighting lamps every Tuesday in Tiruporur, we've experienced
+                                       remarkable results. The increasing number of devotees following his advice speaks
+                                       volumes about his impact. We're grateful to have met such a compassionate and
+                                       knowledgeable mentor. Thanks to his help, many have found solutions to their
+                                       problems and experienced profound transformations. We pray for his continued good
+                                       health and service to others.</p>
+                                    <h5>Sukhamala & Vaidyanaathan, ARR Schools, Kumbakonam</h5>
                                  </div>
-                                    <div class="swiper-slide">
-                                       <div class="as_testimonial_inner_content">
-                                          <p>"Dr. ALP Sampath sir's spiritual guidance has been nothing short of miraculous in my life. Amidst financial turmoil and
-                                          despair, his blessings and counsel have been a guiding light. Through Sathrusamhara Pooja and temple visits, I've
-                                          witnessed tangible transformations unfold. From debt reduction to career advancements, each step has been blessed by
-                                          divine intervention. Dr. ALP Sampath sir's unwavering support and wisdom have brought solace and hope in my darkest
-                                          hours. His teachings have instilled in me a sense of faith and gratitude that transcends the challenges I've faced. I am
-                                          forever grateful for his presence and the profound impact he's had on my journey." Thank you guruji for your devotional
-                                          guidance </p>
-                                          <h5>M Renuka Chennai 26</h5>
-                                       </div>
-                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="as_testimonial_inner_content">
+                                    <p>"Dr. ALP Sampath sir's spiritual guidance has been nothing short of miraculous in
+                                       my life. Amidst financial turmoil and despair, his blessings and counsel have
+                                       been a guiding light. Through Sathrusamhara Pooja and temple visits, I've
+                                       witnessed tangible transformations unfold. From debt reduction to career
+                                       advancements, each step has been blessed by divine intervention. Dr. ALP Sampath
+                                       sir's unwavering support and wisdom have brought solace and hope in my darkest
+                                       hours. His teachings have instilled in me a sense of faith and gratitude that
+                                       transcends the challenges I've faced. I am forever grateful for his presence and
+                                       the profound impact he's had on my journey." Thank you guruji for your devotional
+                                       guidance </p>
+                                    <h5>M Renuka Chennai 26</h5>
+                                 </div>
+                              </div>
                            </div>
                            <div class="swiper-pagination"></div>
                         </div>
@@ -508,121 +523,123 @@
                <div class="row">
                   <div class="col-lg-12">
                      <div class="as_footer_inner  ">
-                              <div class="as_footer_widget">
-                                 <div class="as_footer_logo">
-                                    <a href="index.html"><img src="assets/images/svg/logo.svg" alt="" style="width: 100px; height: 100px;"></a>
-                                 </div>
-                                 <br>
-                                 <ul class="as_contact_list">
-                                    <li>
-                                       <p><p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street) Noothencherry, Madambakkam, Chennai
-                                          600126.</p></p>
-                                    </li>
-                                    <br>
-                                    <li>
-                                          <p>Email : <a
-                                                href="mailto:alpsambathsubramani14@gmail.com?subject=Contact%20Us&body=Hello,%20I%20have%20a%20question%20about...">alpsambathsubramani14@gmail.com
-                                             </a></p>
-                                    </li>
-                                    <br>
-                                    <li>
-                                       <p> Phone: <a href="tel:+918148836708">+918148836708</a>
-                                       </p>
-                                    </li>
-                                    <br>
-                                 </ul>
-                              </div>
+                        <div class="as_footer_widget">
+                           <div class="as_footer_logo">
+                              <a href="index.html"><img src="assets/images/svg/logo.svg" alt=""
+                                    style="width: 100px; height: 100px;"></a>
+                           </div>
+                           <br>
+                           <ul class="as_contact_list">
+                              <li>
+                                 <p>
+                                 <p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street)
+                                    Noothencherry, Madambakkam, Chennai 600126.</p>
+                                 </p>
+                              </li>
+                              <br>
+                              <li>
+                                 <p>Email : <a
+                                       href="mailto:alpsambathsubramani14@gmail.com?subject=Contact%20Us&body=Hello,%20I%20have%20a%20question%20about...">alpsambathsubramani14@gmail.com
+                                    </a></p>
+                              </li>
+                              <br>
+                              <li>
+                                 <p> Phone: <a href="tel:+918148836708">+918148836708</a>
+                                 </p>
+                              </li>
+                              <br>
+                           </ul>
                         </div>
+                     </div>
                   </div>
                </div>
                <div class="row">
                   <div class="social-icons">
-                     <a href="https://www.facebook.com/profile.php?id=61554206264593" target="_blank" class="social-icon"><span><img src="assets/images/svg/fb.png" alt=""></span></a>
-                     <a href="https://www.youtube.com/@sambathSubramani-astrologer" target="_blank" class="social-icon"><span><img src="assets/images/svg/yt.png" alt=""></span></a>
-                     <a href="https://www.instagram.com/alpsubramani?igsh=NWJ0ajlzdGhkNjZz" target="_blank" class="social-icon"><span><img src="assets/images/svg/insta (1).png" alt=""></span></a>
+                     <a href="https://www.facebook.com/profile.php?id=61554206264593" target="_blank"
+                        class="social-icon"><span><img src="assets/images/svg/fb.png" alt=""></span></a>
+                     <a href="https://www.youtube.com/@sambathSubramani-astrologer" target="_blank"
+                        class="social-icon"><span><img src="assets/images/svg/yt.png" alt=""></span></a>
+                     <a href="https://www.instagram.com/alpsubramani?igsh=NWJ0ajlzdGhkNjZz" target="_blank"
+                        class="social-icon"><span><img src="assets/images/svg/insta (1).png" alt=""></span></a>
+                  </div>
+                  <div class="p-3">
+                     <span id="siteseal">
+                        <script async type="text/javascript"
+                           src="https://seal.godaddy.com/getSeal?sealID=7jNCN8JCsiPVlgvsvH3qJAY6DXqzRrxONDcswo2NcLnUq4CJGNNttTn3GDr9"></script>
+                     </span>
                   </div>
                </div>
             </div>
          </section>
       </div>
-    
       <a href="https://wa.me/+918148836708" class="whatsapp-float" target="_blank">
          <i class="fab fa-whatsapp"></i>
       </a>
-
-
-
       <script>
 
 
-function isMobileDevice() {
-    return window.innerWidth <= 768;
-}
+         function isMobileDevice() {
+            return window.innerWidth <= 768;
+         }
 
 
-function updateContactLink() {
-    var about = document.getElementById('about1');
-    var gallery  = document.getElementById('gallery1');
-    var services = document.getElementById('services1');
-    var video = document.getElementById('video1');
-    if (isMobileDevice()) {
-      about.innerHTML = '<a href="about.html">Welcome</a>';
-      gallery.innerHTML = '<a href="gallery.html">Gallery</a>';
-      services.innerHTML = '<a href="services.html">Services</a>';
-    } else {
-      about.innerHTML = '<a href="#welcome">Welcome</a>';
-      gallery.innerHTML = '<a href="#gallery">Gallery</a>';
-      services.innerHTML = '<a href="#services">Services</a>';
-    }
-}
+         function updateContactLink() {
+            var about = document.getElementById('about1');
+            var gallery = document.getElementById('gallery1');
+            var services = document.getElementById('services1');
+            var video = document.getElementById('video1');
+            if (isMobileDevice()) {
+               about.innerHTML = '<a href="about.html">Welcome</a>';
+               gallery.innerHTML = '<a href="gallery.html">Gallery</a>';
+               services.innerHTML = '<a href="services.html">Services</a>';
+            } else {
+               about.innerHTML = '<a href="#welcome">Welcome</a>';
+               gallery.innerHTML = '<a href="#gallery">Gallery</a>';
+               services.innerHTML = '<a href="#services">Services</a>';
+            }
+         }
 
 
-updateContactLink();
-window.addEventListener('resize', updateContactLink);
+         updateContactLink();
+         window.addEventListener('resize', updateContactLink);
 
 
          const apiKey = 'AIzaSyCUdLOcICzvkkv2loFVxQx4eWTUmD_Jhj4';
          const channelId = 'YOUR_CHANNEL_ID';
- 
+
          // Function to fetch latest videos from YouTube channel
          function fetchVideos() {
-             fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=5`)
-                 .then(response => response.json())
-                 .then(data => {
-                     // Clear existing videos
-                     document.getElementById('videos-container').innerHTML = '';
- 
-                     // Display videos
-                     data.items.forEach(item => {
-                         const videoId = item.id.videoId;
-                         const videoTitle = item.snippet.title;
-                         const videoThumbnail = item.snippet.thumbnails.default.url;
- 
-                         const videoContainer = document.createElement('div');
-                         videoContainer.innerHTML = `
+            fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=5`)
+               .then(response => response.json())
+               .then(data => {
+                  // Clear existing videos
+                  document.getElementById('videos-container').innerHTML = '';
+
+                  // Display videos
+                  data.items.forEach(item => {
+                     const videoId = item.id.videoId;
+                     const videoTitle = item.snippet.title;
+                     const videoThumbnail = item.snippet.thumbnails.default.url;
+
+                     const videoContainer = document.createElement('div');
+                     videoContainer.innerHTML = `
                              <h2>${videoTitle}</h2>
                              <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                          `;
-                         document.getElementById('videos-container').appendChild(videoContainer);
-                     });
-                 })
-                 .catch(error => console.error('Error fetching videos:', error));
+                     document.getElementById('videos-container').appendChild(videoContainer);
+                  });
+               })
+               .catch(error => console.error('Error fetching videos:', error));
          }
- 
+
          // Call fetchVideos function when page loads
          window.onload = fetchVideos;
-     </script>
-
-
-
-
-
+      </script>
       <!-- javascript -->
       <script data-cfasync="false"
          src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
       <script src="assets/js/jquery.js"></script>
       <script src="assets/js/bootstrap.js"></script>
-      
       <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/custom.js"></script>
       <script>(function() {if (!document.body) return; var js = "window['__CF$cv$params']={r:'8856a1396f1b907a',t:'MTcxNTk4MDYwMC4xMjYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/695da7821231/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) {var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj);} } if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function() {}; document.onreadystatechange = function(e) {prev(e); if (document.readyState !== 'loading') {document.onreadystatechange = prev; handler();} };} })();</script>

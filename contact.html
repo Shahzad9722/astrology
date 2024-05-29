@@ -22,39 +22,40 @@
          .invalid-field {
             border: 2px solid red;
          }
+
          .datetime-select {
             width: 100%;
             padding: 10px;
             border: 1px solid #C9AB81;
             border-radius: 4px;
             margin-bottom: 10px;
-        }
+         }
 
-        .datetime-select option {
+         .datetime-select option {
             background-color: #ffffff;
             color: #333;
-        }
+         }
 
-        .datetime-select option:hover {
+         .datetime-select option:hover {
             background-color: #ddd;
-        }
+         }
 
-        .form-control {
+         .form-control {
             width: 100%;
             padding: 10px;
             border: 1px solid #C9AB81;
             border-radius: 4px;
             margin-bottom: 10px;
-        }
+         }
 
-        .as_btn {
+         .as_btn {
             display: inline-block;
             padding: 10px 20px;
             text-align: center;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-        }
+         }
       </style>
    </head>
 
@@ -77,7 +78,7 @@
                         </span>
                         <div id="menu" class="as_menu">
                            <ul>
-                              <li><a href="index.html" >HOME</a></li>
+                              <li><a href="index.html">HOME</a></li>
                               <li><a href="about.html">WELCOME</a></li>
                               <li>
                                  <a href="services.html">SERVICES</a>
@@ -96,144 +97,149 @@
                </div>
             </div>
          </section>
-
-        
-      <section class="as_breadcrum_wrapper as_section_light">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <div class="col-lg-12 text-center heading_sections">
-                     <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
-                                    <h3>Contact Us</h3>
-                     <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image" class="centered-image">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="as_contact_wrapper   as_section_light_dark">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <div class="col-lg-12 text-center heading_sections">
-                     <h3>BOOK YOUR APPOINTMENT</h3>
-                  </div>
-               </div>
-               <div class="as_contact_page_top">
-                  <div class="col-md-12 appointment_section">
-               <form class="as_appointment_form" id="appointmentForm" onsubmit="return sendToWhatsApp(event)">
-                  <div class="form-group">
-                     <Label for="name" class="mandatory">Name</Label>
-                     <input type="text" id="name" name="name" required placeholder="Name" class="form-control">
-                  </div>
-                  <div class="form-group">
-                     <Label class="mandatory">Email</Label>
-                     <input type="email" id="email" name="email" required placeholder="Email Address" class="form-control">
-                  </div>
-                  <div class="form-group">
-                     <Label class="mandatory">Phone</Label>
-                     <input type="text" id="phone" name="phone" required placeholder="Phone Number" class="form-control">
-                  </div>
-                  <div class="form-group">
-                     <Label class="mandatory">Place of Birth</Label>
-                     <input type="text" id="placeOfBirth" name="placeOfBirth" required placeholder="Place of Birth"
-                        class="form-control">
-                  </div>
-                  <div class="form-group">
-                     <label class="mandatory">Date of Birth</label>
-                     <div class="col-md-12 d-flex gap-4 datetime-container">
-                        <select id="day" name="day" class="datetime-select" required>
-                           <option value="" disabled selected>Date</option>
-                        </select>
-                        <select id="month" name="month" class="datetime-select" required>
-                           <option value="" disabled selected>Month</option>
-                        </select>
-                        <select id="year" name="year" class="datetime-select" required>
-                           <option value="" disabled selected>Year</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <label class="mandatory">Time of Birth</label>
-                     <div class="col-md-12 d-flex gap-4">
-                        <select id="hour" name="hour" class="datetime-select" required>
-                           <option value="" disabled selected>Hour</option>
-                        </select>
-                        <select id="minute" name="minute" class="datetime-select" required >
-                           <option value="" disabled selected>Minute</option>
-                        </select>
-                        <select id="second" name="second" class="datetime-select" required>
-                           <option value="" disabled selected>Second</option>
-                        </select>
-                        <select id="ampm" name="ampm" class="datetime-select" required>
-                           <option value="AM">AM</option>
-                           <option value="PM">PM</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <textarea id="message" name="message" class="form-control" placeholder="Your Message"></textarea>
-                  </div>
-                  <button type="submit" class="as_btn">Fix Appointment</button>
-               </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="as_contact_wrapper   as_section_light">
-         <div class="container">
-            <div class="row appointment_section">
-               <div class="as_contact_detail as_contact_detail_color ">
-                  <div class="col-xl-6 col-sm-12 col-md-12">
-                     <ul>
-                        <li class="as_info_box">
-                           <span class="as_icon">
-                              <img class="width:50px" src="assets/images/svg/direction.svg" alt="">
-                           </span>
-                           <p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street)
-                              Noothencherry, Madambakkam, Chennai 600126.</p>
-                        </li>
-                        <li class="as_info_box">
-                           <span class="as_icon" style="width: 50px !important;">
-                              <img src="assets/images/svg/contact.svg" alt="">
-                           </span>
-                           <a class="ms-4" href="tel:+918148836708">+918148836708</a>
-                        </li>
-                        <li class="as_info_box">
-                           <span class="as_icon" style="width: 50px !important;">
-                              <img src="assets/images/svg/message.svg" alt="">
-                           </span>
-                           <a class="ms-4" href="mailto:alpsambathsubramani14@gmail.com"> alpsambathsubramani14@gmail.com </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="as_map col-xl-6 col-sm-12 col-md-12">
-                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15556.879357453156!2d80.15422025757073!3d12.893580829821163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fd06da1ed4f%3A0x6d2a96fb83060213!2sSASTAVA!5e0!3m2!1sen!2s!4v1716296191629!5m2!1sen!2s"
-                        width="100%" height="318" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="as_footer_wrapper as_section_dark">
-         <section class="as_footer_wrapper as_section_dark">
-            <div class="container text-center">
+         <section class="as_breadcrum_wrapper as_section_light">
+            <div class="container">
                <div class="row">
-                  <div class="col-lg-12 col-md-6">
+                  <div class="col-lg-12 text-center">
+                     <div class="col-lg-12 text-center heading_sections">
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
+                        <h3>Contact Us</h3>
+                        <img src="assets/images/svg/diamond.svg" width="60px" height="40px" alt="Centered Image"
+                           class="centered-image">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="as_contact_wrapper   as_section_light_dark">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 text-center">
+                     <div class="col-lg-12 text-center heading_sections">
+                        <h3>BOOK YOUR APPOINTMENT</h3>
+                     </div>
+                  </div>
+                  <div class="as_contact_page_top">
+                     <div class="col-md-12 appointment_section">
+                        <form class="as_appointment_form" id="appointmentForm" onsubmit="return sendToWhatsApp(event)">
+                           <div class="form-group">
+                              <Label for="name" class="mandatory">Name</Label>
+                              <input type="text" id="name" name="name" required placeholder="Name" class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <Label class="mandatory">Email</Label>
+                              <input type="email" id="email" name="email" required placeholder="Email Address"
+                                 class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <Label class="mandatory">Phone</Label>
+                              <input type="text" id="phone" name="phone" required placeholder="Phone Number"
+                                 class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <Label class="mandatory">Place of Birth</Label>
+                              <input type="text" id="placeOfBirth" name="placeOfBirth" required
+                                 placeholder="Place of Birth" class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <label class="mandatory">Date of Birth</label>
+                              <div class="col-md-12 d-flex gap-4 datetime-container">
+                                 <select id="day" name="day" class="datetime-select" required>
+                                    <option value="" disabled selected>Date</option>
+                                 </select>
+                                 <select id="month" name="month" class="datetime-select" required>
+                                    <option value="" disabled selected>Month</option>
+                                 </select>
+                                 <select id="year" name="year" class="datetime-select" required>
+                                    <option value="" disabled selected>Year</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="mandatory">Time of Birth</label>
+                              <div class="col-md-12 d-flex gap-4">
+                                 <select id="hour" name="hour" class="datetime-select" required>
+                                    <option value="" disabled selected>Hour</option>
+                                 </select>
+                                 <select id="minute" name="minute" class="datetime-select" required>
+                                    <option value="" disabled selected>Minute</option>
+                                 </select>
+                                 <select id="second" name="second" class="datetime-select" required>
+                                    <option value="" disabled selected>Second</option>
+                                 </select>
+                                 <select id="ampm" name="ampm" class="datetime-select" required>
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <textarea id="message" name="message" class="form-control"
+                                 placeholder="Your Message"></textarea>
+                           </div>
+                           <button type="submit" class="as_btn">Fix Appointment</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="as_contact_wrapper   as_section_light">
+            <div class="container">
+               <div class="row appointment_section">
+                  <div class="as_contact_detail as_contact_detail_color ">
+                     <div class="col-xl-6 col-sm-12 col-md-12">
+                        <ul>
+                           <li class="as_info_box">
+                              <span class="as_icon">
+                                 <img class="width:50px" src="assets/images/svg/direction.svg" alt="">
+                              </span>
+                              <p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street)
+                                 Noothencherry, Madambakkam, Chennai 600126.</p>
+                           </li>
+                           <li class="as_info_box">
+                              <span class="as_icon" style="width: 50px !important;">
+                                 <img src="assets/images/svg/contact.svg" alt="">
+                              </span>
+                              <a class="ms-4" href="tel:+918148836708">+918148836708</a>
+                           </li>
+                           <li class="as_info_box">
+                              <span class="as_icon" style="width: 50px !important;">
+                                 <img src="assets/images/svg/message.svg" alt="">
+                              </span>
+                              <a class="ms-4" href="mailto:alpsambathsubramani14@gmail.com">
+                                 alpsambathsubramani14@gmail.com </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="as_map col-xl-6 col-sm-12 col-md-12">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15556.879357453156!2d80.15422025757073!3d12.893580829821163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fd06da1ed4f%3A0x6d2a96fb83060213!2sSASTAVA!5e0!3m2!1sen!2s!4v1716296191629!5m2!1sen!2s"
+                           width="100%" height="318" style="border:0;" allowfullscreen="" loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="as_footer_wrapper as_section_dark">
+            <section class="as_footer_wrapper as_section_dark">
+               <div class="container text-center">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-6">
                         <div class="as_footer_inner  ">
                            <div class="as_footer_widget">
                               <div class="as_footer_logo">
-                                 <a href="index.html"><img src="assets/images/svg/logo.svg" alt="" style="width: 100px; height: 100px;"></a>
+                                 <a href="index.html"><img src="assets/images/svg/logo.svg" alt=""
+                                       style="width: 100px; height: 100px;"></a>
                               </div>
                               <br>
                               <ul class="as_contact_list">
                                  <li>
                                     <p>
-                                    <p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street) Noothencherry,
-                                       Madambakkam, Chennai 600126.</p>
+                                    <p>Flats No 6, First Floor, Sasthava Apartment, No 1A, Manickam Nagar (Mgr Street)
+                                       Noothencherry, Madambakkam, Chennai 600126.</p>
                                     </p>
                                  </li>
                                  <br>
@@ -251,23 +257,29 @@
                               </ul>
                            </div>
                         </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61554206264593" target="_blank"
+                           class="social-icon"><span><img src="assets/images/svg/fb.png" alt=""></span></a>
+                        <a href="https://www.youtube.com/@sambathSubramani-astrologer" target="_blank"
+                           class="social-icon"><span><img src="assets/images/svg/yt.png" alt=""></span></a>
+                        <a href="https://www.instagram.com/alpsubramani?igsh=NWJ0ajlzdGhkNjZz" target="_blank"
+                           class="social-icon"><span><img src="assets/images/svg/insta (1).png" alt=""></span></a>
+                     </div>
+                     <div class="p-3">
+                        <span id="siteseal">
+                           <script async type="text/javascript"
+                              src="https://seal.godaddy.com/getSeal?sealID=7jNCN8JCsiPVlgvsvH3qJAY6DXqzRrxONDcswo2NcLnUq4CJGNNttTn3GDr9"></script>
+                        </span>
+                     </div>
                   </div>
                </div>
-               <div class="row">
-                  <div class="social-icons">
-                     <a href="https://www.facebook.com/profile.php?id=61554206264593" target="_blank" class="social-icon"><span><img
-                              src="assets/images/svg/fb.png" alt=""></span></a>
-                     <a href="https://www.youtube.com/@sambathSubramani-astrologer" target="_blank" class="social-icon"><span><img
-                              src="assets/images/svg/yt.png" alt=""></span></a>
-                     <a href="https://www.instagram.com/alpsubramani?igsh=NWJ0ajlzdGhkNjZz" target="_blank" class="social-icon"><span><img
-                              src="assets/images/svg/insta (1).png" alt=""></span></a>
-                  </div>
-               </div>
-            </div>
+            </section>
          </section>
-      </section>
-      <section>
-      </section>
+         <section>
+         </section>
       </div>
       <a href="https://wa.me/+918148836708" class="whatsapp-float" target="_blank">
          <i class="fab fa-whatsapp"></i>
@@ -289,111 +301,111 @@
          });
       </script>
       <script>(function() {if (!document.body) return; var js = "window['__CF$cv$params']={r:'8856a165ebd3907a',t:'MTcxNTk4MDYwNi42MDUwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/695da7821231/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) {var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj);} } if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function() {}; document.onreadystatechange = function(e) {prev(e); if (document.readyState !== 'loading') {document.onreadystatechange = prev; handler();} };} })();</script>
-    <script>
-      // Function to populate select options
-      function populateSelectOptions() {
-         const daySelect = document.getElementById('day');
-         const monthSelect = document.getElementById('month');
-         const yearSelect = document.getElementById('year');
-         const hourSelect = document.getElementById('hour');
-         const minuteSelect = document.getElementById('minute');
-         const secondSelect = document.getElementById('second');
+      <script>
+         // Function to populate select options
+         function populateSelectOptions() {
+            const daySelect = document.getElementById('day');
+            const monthSelect = document.getElementById('month');
+            const yearSelect = document.getElementById('year');
+            const hourSelect = document.getElementById('hour');
+            const minuteSelect = document.getElementById('minute');
+            const secondSelect = document.getElementById('second');
 
-         // Populate day options (1-31)
-         for (let i = 1;i <= 31;i++) {
-            const option = document.createElement('option');
-            option.value = i;
-            option.textContent = i;
-            daySelect.appendChild(option);
-         }
-
-         // Populate month options (1-12)
-         for (let i = 1;i <= 12;i++) {
-            const option = document.createElement('option');
-            option.value = i;
-            option.textContent = i;
-            monthSelect.appendChild(option);
-         }
-
-         // Populate year options (1950-2025)
-         for (let i = 1950;i <= 2025;i++) {
-            const option = document.createElement('option');
-            option.value = i;
-            option.textContent = i;
-            yearSelect.appendChild(option);
-         }
-
-         // Populate hour options (1-12)
-         for (let i = 1;i <= 12;i++) {
-            const option = document.createElement('option');
-            option.value = i;
-            option.textContent = i;
-            hourSelect.appendChild(option);
-         }
-
-         // Populate minute and second options (1-60)
-         for (let i = 0;i <= 60;i++) {
-            const minuteOption = document.createElement('option');
-            minuteOption.value = i;
-            minuteOption.textContent = i;
-            minuteSelect.appendChild(minuteOption);
-
-            const secondOption = document.createElement('option');
-            secondOption.value = i;
-            secondOption.textContent = i;
-            secondSelect.appendChild(secondOption);
-         }
-      }
-
-      // Call the function to populate select options when the document is loaded
-      document.addEventListener('DOMContentLoaded', populateSelectOptions);
-
-      function sendToWhatsApp(event) {
-         event.preventDefault(); // Prevent the form from submitting the traditional way
-
-         // Validate the form
-         var form = document.getElementById('appointmentForm');
-         var inputs = form.querySelectorAll('input, select, textarea');
-         var isValid = true;
-
-         inputs.forEach(function(input) {
-            if (!input.checkValidity()) {
-               input.classList.add('invalid-field');
-               isValid = false;
-            } else {
-               input.classList.remove('invalid-field');
+            // Populate day options (1-31)
+            for (let i = 1;i <= 31;i++) {
+               const option = document.createElement('option');
+               option.value = i;
+               option.textContent = i;
+               daySelect.appendChild(option);
             }
-         });
 
-         if (!isValid) {
-            form.reportValidity();
-            return;
+            // Populate month options (1-12)
+            for (let i = 1;i <= 12;i++) {
+               const option = document.createElement('option');
+               option.value = i;
+               option.textContent = i;
+               monthSelect.appendChild(option);
+            }
+
+            // Populate year options (1950-2025)
+            for (let i = 1950;i <= 2025;i++) {
+               const option = document.createElement('option');
+               option.value = i;
+               option.textContent = i;
+               yearSelect.appendChild(option);
+            }
+
+            // Populate hour options (1-12)
+            for (let i = 1;i <= 12;i++) {
+               const option = document.createElement('option');
+               option.value = i;
+               option.textContent = i;
+               hourSelect.appendChild(option);
+            }
+
+            // Populate minute and second options (1-60)
+            for (let i = 0;i <= 60;i++) {
+               const minuteOption = document.createElement('option');
+               minuteOption.value = i;
+               minuteOption.textContent = i;
+               minuteSelect.appendChild(minuteOption);
+
+               const secondOption = document.createElement('option');
+               secondOption.value = i;
+               secondOption.textContent = i;
+               secondSelect.appendChild(secondOption);
+            }
          }
 
-         var Message1 = "*Hi, I want to get the Apppointment*";
-         var name = document.getElementById('name').value;
-         var email = document.getElementById('email').value;
-         var phone = document.getElementById('phone').value;
-         var placeOfBirth = document.getElementById('placeOfBirth').value;
-         var day = document.getElementById('day').value;
-         var month = document.getElementById('month').value;
-         var year = document.getElementById('year').value;
-         var hour = document.getElementById('hour').value;
-         var minute = document.getElementById('minute').value;
-         var second = document.getElementById('second').value;
-         var ampm = document.getElementById('ampm').value;
-         var message = document.getElementById('message').value;
+         // Call the function to populate select options when the document is loaded
+         document.addEventListener('DOMContentLoaded', populateSelectOptions);
 
-         // Construct the WhatsApp message
-         var whatsappMessage = `${Message1}%0A%0A Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0APlace of Birth: ${placeOfBirth}%0ADate of Birth: ${day}-${month}-${year}%0ATime of Birth: ${hour}:${minute}:${second} ${ampm}%0AMessage: ${message}`;
+         function sendToWhatsApp(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
 
-         // WhatsApp URL
-         var whatsappURL = `https://wa.me/+918148836708?text=${whatsappMessage}`;
+            // Validate the form
+            var form = document.getElementById('appointmentForm');
+            var inputs = form.querySelectorAll('input, select, textarea');
+            var isValid = true;
 
-         // Redirect to WhatsApp
-         window.location.href = whatsappURL;
-      }
-   </script>
+            inputs.forEach(function(input) {
+               if (!input.checkValidity()) {
+                  input.classList.add('invalid-field');
+                  isValid = false;
+               } else {
+                  input.classList.remove('invalid-field');
+               }
+            });
+
+            if (!isValid) {
+               form.reportValidity();
+               return;
+            }
+
+            var Message1 = "*Hi, I want to get the Apppointment*";
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var placeOfBirth = document.getElementById('placeOfBirth').value;
+            var day = document.getElementById('day').value;
+            var month = document.getElementById('month').value;
+            var year = document.getElementById('year').value;
+            var hour = document.getElementById('hour').value;
+            var minute = document.getElementById('minute').value;
+            var second = document.getElementById('second').value;
+            var ampm = document.getElementById('ampm').value;
+            var message = document.getElementById('message').value;
+
+            // Construct the WhatsApp message
+            var whatsappMessage = `${Message1}%0A%0A Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0APlace of Birth: ${placeOfBirth}%0ADate of Birth: ${day}-${month}-${year}%0ATime of Birth: ${hour}:${minute}:${second} ${ampm}%0AMessage: ${message}`;
+
+            // WhatsApp URL
+            var whatsappURL = `https://wa.me/+918148836708?text=${whatsappMessage}`;
+
+            // Redirect to WhatsApp
+            window.location.href = whatsappURL;
+         }
+      </script>
    </body>
    <!-- Mirrored from kamleshyadav.com/html/astrology/version-4/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 May 2024 21:18:54 GMT -->
 
